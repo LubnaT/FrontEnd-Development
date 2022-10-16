@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+  
+    <title> Calculator </title>
+</head>
+<body class=" bg-black">
+    <div class=" max-w-7xl mx-auto my-4 flex justify-center items-center bg-gradient-to-br from-yellow-400 via-red-500 to-purple-400 rounded-md h-screen">
+            <div class=" bg-white rounded-md shadow-2xl shadow-rose-400 px-8 py-12">
+                <p class=" font-black uppercase mb-2 w-full text-4xl text-center rounded-md">Calculator</p>
+                <p class=" mb-4 text-lg font-medium">Your Result is :  </p>
+                <div class=" flex space-x-4 " id="clear">
+                    <input id="input1" type="text" value="0" class=" w-1/2  border rounded-md shadow px-4 py-2">
+                    <input id="input2" type="text" value="0" class=" w-1/2  border rounded-md shadow px-4 py-2">
+                </div>
+                <div class="grid grid-cols-4 gap-4 mt-8">
+                    <div class=" border text-center border-black hover:shadow shadow-xl rounded-lg px-4 py-2 font-semibold hover:bg-black hover:text-white cursor-pointer">
+                        <buttons onclick="handler(add)">
+                                Add
+                        </buttons>
+                    </div>
+                    <div class=" border text-center border-black hover:shadow shadow-xl rounded-lg px-4 py-2 font-semibold hover:bg-black hover:text-white cursor-pointer">
+                        <buttons onclick="handler(sub)">
+                            Substract
+                        </buttons>
+                    </div>
+                    <div class=" border text-center border-black hover:shadow shadow-xl rounded-lg px-4 py-2 font-semibold hover:bg-black hover:text-white cursor-pointer">
+                        <buttons onclick="handler(remain)">
+                            Remainder
+                        </buttons>
+                    </div>
+                    <div class=" border text-center border-black hover:shadow shadow-xl rounded-lg px-4 py-2 font-semibold flex justify-center items-center row-span-2 hover:bg-black hover:text-white cursor-pointer">
+                        <buttons id="reset" onclick="reset()">
+                            Reset
+                        </buttons>
+                    </div>
+                    <div class=" border text-center border-black hover:shadow shadow-xl rounded-lg px-4 py-2 font-semibold hover:bg-black hover:text-white cursor-pointer">
+                        <buttons onclick="handler(mul)">
+                            Multiply
+                        </buttons>
+                    </div>
+                    <div class=" border text-center border-black hover:shadow shadow-xl rounded-lg px-4 py-2 font-semibold hover:bg-black hover:text-white cursor-pointer">
+                        <buttons onclick="handler(div)">
+                            Divide
+                        </buttons>
+                    </div>
+                    <div class=" border text-center border-black hover:shadow shadow-xl rounded-lg px-4 py-2 font-semibold hover:bg-black hover:text-white cursor-pointer">
+                        <buttons onclick="handler(avg)">
+                            Average
+                        </buttons>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+    <script src="/calculator.js" >
+    </script>
+</body>
+</html>
