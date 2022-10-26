@@ -1,0 +1,166 @@
+<html>
+    <head>
+        <!-- Title name  -->
+        <title> Spotify </title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body class="flex w-screen overflow-x-hidden overflow-y-hidden">
+        <script src="/spotify.js">
+
+        </script>
+       <!-- main div -->
+        <div class=" flex w-screen px-8 py-3 z-10 items-center justify-between fixed bottom-0 bg-gradient-to-r from-pink-500 to-blue-500">
+            <!-- fixed signup div or bar -->
+            <div class=" text-white text-xs">
+                <p>Preview for spotify</p>
+                <p>Sign up to get unlimited songs and podcast with occasional ads</p>
+            </div>
+            <div class="">
+                <button class=" bg-white rounded-full text-black px-8 py-2 text-xs font-bold">SignUp for free</button>
+            </div>
+        </div>
+       
+        <!-- side bar or nav bar -->
+        <div class="flex h-screen w-screen">
+        <div class="bg-black w-1/6">
+            <div>
+                <img class="h-[40px] mt-[30px] ml-[20px]" src="https://thumbs.dreamstime.com/b/vinnytsia-ukraine-may-spotify-logo-dark-mode-cool-music-service-offers-legal-streaming-music-spotify-logo-dark-mode-218033923.jpg">
+            </div>
+
+            <div class="flex h-10">
+                <img class="h-[25px] mt-[30px] ml-[20px]" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV1dzEAVKmowA5n4uick7WdDLtzWkqBhjjnf0NQHCHKsI-m6J3E35Mibn5HMLAoIrv18w&usqp=CAU"> 
+                <button class="text-white text-l font-bold mt-[34px] ml-[10px]">Home</button>
+            </div>
+
+            <div class="flex h-6">
+                <img class="h-[25px] mt-[30px] ml-[18px]" src="https://png.pngtree.com/png-vector/20190329/ourlarge/pngtree-vector-magnifying-glass-icon-png-image_889405.jpg">
+                <button  class="text-white text-l font-bold  mt-[30px] ml-[10px]">Search</button >
+            </div>
+
+            <div class="flex">
+                <img class="h-[25px] mt-[40px] ml-[20px]" src="https://www.shareicon.net/data/128x128/2016/03/27/465693_media_256x256.png">
+                <button class="text-white text-l font-bold  mt-[40px] ml-[10px]">Library</button>
+            </div>
+
+            <div>
+            <div class="flex h-8">
+                <img class="h-[22px] mt-[40px] ml-[20px]" src="https://png.pngtree.com/element_our/sm/20180516/sm_5afbe35ff3ec9.jpg">
+                <button class="text-white text-l font-bold  mt-[40px] ml-[10px]">Create Playlist</button>
+            </div>
+
+            <div class="flex h-6">
+                <img class="h-[22px] mt-[40px] ml-[20px]" src="https://icon-library.com/images/76-512_7333.png">
+                <button class="text-white text-l font-bold  mt-[40px] ml-[10px]">Liked Songs</button>
+            </div>
+
+            <div class="">
+                <button class="pt-28  text-white text-xs  mt-[50px] ml-[30px]">Cookies</button>
+                <br>
+                <button class="text-white text-xs  mt-[10px] ml-[30px]">Privacy</button>
+            </div>
+
+            </div>
+            </div>
+
+            <!-- top nav bar -->
+            <div class=" h-screen w-full overflow-y-scroll relative right-4 bg-[#1d1d1d]">
+                <div class="sticky top-0 h-16 w-full bg-[#101010] flex">
+                 <div class="flex h-12 top-0 w-full">
+                   <button class="rounded-full bg-black/30 object-fill pt-0 pb-10 text-white text-3xl justify-center w-10 h-10 ml-[20px] mt-[10px]"> < </button>
+                   <button class=" rounded-full bg-black/30 text-white text-3xl object-fill pt-0 pb-10 items-center w-10 h-10 ml-[10px] mt-[10px]"> > </button>
+                 </div>
+
+                 <div class="absolute h-10 w-60 mt-[20px] right-6 mr-2">
+                    <button class=" font-bold rounded-full h-6 text-white abolute top-0 ml-[40px] right-8">Sign Up</button>
+                    <button class="bg-white font-bold rounded-md w-16 h-8 text-black absolute top-0 right-4  text-l">Login</button>
+                 </div>
+                        
+                   
+                    
+                </div>
+                <div class="relative right-0">
+                    <div class="h-4">
+                        <h2 class="ml-[30px] font-bold text-2xl text-white mt-[20px]">Spotify Playlists</h2>
+                        <h4 class="absolute top-1 right-2 font-bold text-white">SEE ALL</h4>
+                    </div>
+                   <br>
+                    <br>
+                    <div class="grid grid-rows-1 max-w-max gap-4 grid-cols-6 ml-[20px] mr-[20px]">
+                    <div class=" group space-y-2 max-w-max p-4 cursor-pointer  drop-shadow-md text-white hover:bg-zinc-800  bg-[#181818]  rounded-md ">
+                        <img class=" object-cover h-44 w-44 rounded-md" src="https://upload.wikimedia.org/wikipedia/en/d/dc/Justin_Bieber_-_Mistletoe.jpg">
+                       <h2 class="font-medium"><b>Under The Mistletoe</b></h2> 
+                       <p class="pl-1 text-sm text-grey-500">2011.  Justin_Bieber</p>
+                      
+                        <div class="relative bottom-1/2">
+                            <button onclick="play(1)" class="hidden transition ease-in-out duration-300 bg-green-500 transform hover:scale-125 rounded-full group-hover:block absolute top1/2 right-2" ><img class="object-cover h-10 w-10" src="https://cdn-icons-png.flaticon.com/512/0/375.png"></button>
+                        </div>
+                    </div>
+                   
+                    <div class=" group space-y-2 max-w-max p-4 cursor-pointer  drop-shadow-md text-white hover:bg-zinc-800  bg-[#181818]  rounded-md ">
+                        <img class=" object-cover h-44 w-44 rounded-md" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDjeQXgyI8l7vILZ6znKUkoaTCnTtcNw6ud1TfysghHzE4tQJ0nfIvNQCAnwFHO54Z8PE&usqp=CAU">
+                       <h2 class="font-medium"><b>Dynamite</b></h2> 
+                       <p class="pl-1 text-sm text-grey-500">2020.  BTS</p>
+                      
+                        <div class="relative bottom-1/2">
+                            <button onclick="play(2)" class="hidden transition ease-in-out duration-300 bg-green-500 transform hover:scale-125 rounded-full group-hover:block absolute top1/2 right-2" ><img class="object-cover h-10 w-10" src="https://cdn-icons-png.flaticon.com/512/0/375.png"></button>
+                        </div>
+                    </div>
+
+                    <div class=" group space-y-2 max-w-max p-4 cursor-pointer  drop-shadow-md text-white hover:bg-zinc-800  bg-[#181818]  rounded-md ">
+                        <img class=" object-cover h-44 w-44 rounded-md" src="https://i1.sndcdn.com/artworks-000201927280-2vsnux-t500x500.jpg">
+                       <h2 class="font-medium"><b>Shape Of You</b></h2> 
+                       <p class="pl-1 text-sm text-grey-500">2017.  Ed Sheeran</p>
+                      
+                        <div class="relative bottom-1/2">
+                            <button onclick="play(3)" class="hidden transition ease-in-out duration-300 bg-green-500 transform hover:scale-125 rounded-full group-hover:block absolute top1/2 right-2" ><img class="object-cover h-10 w-10" src="https://cdn-icons-png.flaticon.com/512/0/375.png"></button>
+                        </div>
+                    </div>
+
+                    <div class=" group space-y-2 max-w-max p-4 cursor-pointer  drop-shadow-md text-white hover:bg-zinc-800  bg-[#181818]  rounded-md ">
+                        <img class=" object-cover h-44 w-44 rounded-md" src="https://i.scdn.co/image/ab67616d0000b273e7f1ff44b74df429307f4164">
+                       <h2 class="font-medium"><b>Bhar Do Jholi Meri</b></h2> 
+                       <p class="pl-1 text-sm text-grey-500">2015.  Adnan Sami</p>
+                      
+                        <div class="relative bottom-1/2">
+                            <button onclick="play(4)" class="hidden transition ease-in-out duration-300 bg-green-500 transform hover:scale-125 rounded-full group-hover:block absolute top1/2 right-2" ><img class="object-cover h-10 w-10" src="https://cdn-icons-png.flaticon.com/512/0/375.png"></button>
+                        </div>
+                    </div>
+
+
+                    <div class=" group space-y-2 max-w-max p-4 cursor-pointer  drop-shadow-md text-white hover:bg-zinc-800  bg-[#181818]  rounded-md ">
+                        <img class=" object-cover h-44 w-44 rounded-md" src="https://a10.gaanacdn.com/gn_img/song/z8k3yd1Krx/k3y4gl50Kr/size_l_1658037089.jpg">
+                       <h2 class="font-medium"><b>Kesariya</b></h2> 
+                       <p class="pl-1 text-sm text-grey-500">2022. Arijit Singh</p>
+                      
+                        <div class="relative bottom-1/2">
+                            <button onclick="play(5)" class="hidden transition ease-in-out duration-300 bg-green-500 transform hover:scale-125 rounded-full group-hover:block absolute top1/2 right-2" ><img class="object-cover h-10 w-10" src="https://cdn-icons-png.flaticon.com/512/0/375.png"></button>
+                        </div>
+                    </div>
+
+
+                    <div class=" group space-y-2 max-w-max p-4 cursor-pointer  drop-shadow-md text-white hover:bg-zinc-800  bg-[#181818]  rounded-md ">
+                        <img class=" object-cover h-44 w-44 rounded-md" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFTFzkXSpDKUduZCfnEAKDhkweXvynGvVibOZElBAO4E5BEAP_BP5-1_a0G4578KxWsiM&usqp=CAU">
+                       <h2 class="font-medium"><b>Teri Mitti</b></h2> 
+                       <p class="pl-1 text-sm text-grey-500">2019.  B Praak</p>
+                      
+                        <div class="relative bottom-1/2">
+                            <button onclick="play(6)" class="hidden transition ease-in-out duration-300 bg-green-500 transform hover:scale-125 rounded-full group-hover:block absolute top1/2 right-2" ><img class="object-cover h-10 w-10" src="https://cdn-icons-png.flaticon.com/512/0/375.png"></button>
+                        </div>
+                    </div>
+
+
+                </div>  
+                        <div class="h-4">
+                            <h2 class="ml-[30px] font-bold text-2xl text-white mt-[20px]">Uniquely Yours</h2>
+                           
+                        </div>
+                    
+
+               
+                </div>
+            </div>
+        
+       </div>
+    </body>
+</html>
