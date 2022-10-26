@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Project</title>
+    <style>
+        .navbar{
+            background-image: url("https://149695847.v2.pressablecdn.com/wp-content/uploads/2019/05/apps.55787.9007199266246365.687a10a8-4c4a-4a47-8ec5-a95f70d8852d.jpg");
+       
+        };
+
+        .openpop{
+            visibility: visible;
+            transform: translate(-50%,-50%) scale(1);
+            /* pointer-events: auto; */
+        }
+
+        .popup{
+            transition: transform 0.4s, bottom 0.4s; 
+            transform: translate(-50%, -50%) scale(0.1);
+        }
+    </style>
+</head>
+<body class="navbar h-[800px] w-screen">
+
+    
+
+        <div class="h-[100px] flex w-screen  bg-black">
+
+           <img class="h-32 w-64" src="https://images.ctfassets.net/4cd45et68cgf/7LrExJ6PAj6MSIPkDyCO86/542b1dfabbf3959908f69be546879952/Netflix-Brand-Logo.png?w=684&h=456">
+         
+           <div class="relative top-0 right-4 left-32 ml-[500px] mr-[60px] mt-[10px]" > 
+           <select class="absolute top-[10px] left-24 right-2 ml-[260px] mr-[40px] h-14 w-32 p-2 font-bold text-black text-xl bg-black text-white">
+            <option class="font-bold text-black text-xl bg-black text-white">English</option>
+            <option class="font-bold text-black text-xl bg-black text-white">Hindi</option>
+           </select>
+            
+            <button class="absolute top-[10px] left-28 right-6 ml-[400px] h-14 w-32 p-4 font-bold text-black text-xl bg-black text-white">Sign In</button>
+         </div>
+    </div>
+
+        <div class="justify-center items-center"> 
+            <div class=" ml-[300px] mt-[100px] h-[600px] w-[1000px]">
+            <h1 class=" block pt-[40px] ml-[60px] mr-[60px text-center text-white font-semibold text-7xl ">Unlimited movies, TV shows and more.</h1>
+                <h2 class="font-medium mt-[25px] ml-[60px] mr-[40px] pt[10px] block text-center text-white text-4xl ">Watch Anywhere. Cancel Anytime.</h2>
+            <form>
+                <h3 class="font-medium mt-[30px] ml-[100px] mr-[80px] pt[10px] block text-center text-white text-2xl">Ready to Watch? Enter your Email to create or restart your membership</h3>
+           
+                <div class=" relative mt-[30px] ml-[100px] mr-[80px] flex-row flex">
+                    
+                <input type="email" name="email" class=" text-black text-[16px] cursor-text h-[48px] w-[650px] pt-[10px] pr-[10px] pl-[10px] border-1 border-solid border-[#8c8c8c] box-border block" >         
+                 <label class="text-[#8c8c8c] text-sm font-normal pl-[20px] absolute top-[20px] text-left hover:translate-y-[-50%] hover: transition-[font] hover: duration-[0.1s] hover: ease-in-out hover: transition-[top] hover: transition-[transform] ">Email Address</label>    
+                <div class="justify-center items-center flex">
+                    <button id="submit" type="submit" name="submit" onclick="open()" class="bg-red-600 text-center text-2xl font-semibold text-white  w-[200px] h-[48px] pb-2">Get Started <span class="text-3xl font-semibold text-white "> ></span></button>
+                  <div id="pop" class="popup width-[400px] bg-white rounded-md  absolute t-0 left-[50%] text-center pr-[30px] pb-[30px] pl-[30px] text-black">
+                    <img class="w-[100px] mt-[-50px] rounded-md shadow-[0_2px_5px_rgba(0,0,0,0.2)]" src="https://www.citypng.com/public/uploads/preview/hd-red-round-tick-check-mark-symbol-logo-icon-png-31623347262o2s0kirtnl.png" alt="tick mark">
+                        <h2 class="text-[38px] font-medium mt-[30px] mr-[0px] mb-[10px] "> Thank You!!</h2>
+                        <p >Your details are successfully submitted. <br>Check your membership status and pay the amount.</p>
+                        <button id="ok" onclick="close()" class="w-full mt-[50px] pt-[10px] pb-[10px] bg-[#6fd649] text-white text-[18px] border-2 curser-pointer shadow-[0_5px_5px_rgba(0,0,0,0.2)]" type="button" >OK</button>
+                  
+                    </div>
+                </div>
+                
+                </div>
+            </form>
+            </div>
+
+        </div>
+   
+        <script>
+            const pops = document.getElementById('pop');
+            const submit = document.getElementById('submit');
+            const ok = document.getElementById('ok');
+             
+            submit.addEventListener('click', () => {
+                pops.classList.add('openpop');
+            });
+
+            ok.addEventListener('click', () => {
+                pops.classList.remove('openpop');
+            });
+           
+        </script>
+</body>
+</html>
