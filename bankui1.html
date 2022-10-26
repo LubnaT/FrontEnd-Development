@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Home Page</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex">
+    <div class="bg-stone-800 h-screen w-1/6">
+        <div class="flex h-10">
+            <img class="h-[30px] mt-[50px] ml-[20px]" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV1dzEAVKmowA5n4uick7WdDLtzWkqBhjjnf0NQHCHKsI-m6J3E35Mibn5HMLAoIrv18w&usqp=CAU"> 
+            <button class="text-white text-2xl font-bold mt-[50px] ml-[10px]">Home</button>
+        </div>
+
+        <div class=" flex h-10 mt-[25px]">
+            <img class="h-[30px] mt-[50px] ml-[20px]" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhp_jlZ1WiPXp7VMMoZ_87mAt8tXZ7L4dE5sxyoLDrg6Gh5Yn4aVYjXib8fpnVEhifctc&usqp=CAU"> 
+            <button class="text-white text-2xl font-bold mt-[50px] ml-[10px]">Apply Now</button>
+        </div>
+
+        <div class=" flex h-10 mt-[25px]">
+            <img class="h-[30px] mt-[50px] ml-[20px]" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNLi8GE0JI9RrXmLXWwnQtH7IDKvpK4k9fRA&usqp=CAU"> 
+            <button class="text-white text-2xl font-bold mt-[50px] ml-[10px]">Passbook</button>
+        </div>
+
+        <div class=" flex h-10 mt-[25px]">
+            <img class="h-[30px] mt-[50px] ml-[20px]" src="https://png.pngtree.com/png-clipart/20190630/original/pngtree-vector-active-call-icon-png-image_4143950.jpg"> 
+            <button class="text-white text-2xl font-bold mt-[50px] ml-[10px]">Contact</button>
+        </div>
+
+        <div class=" flex h-10 mt-[25px]">
+            <img class="h-[30px] mt-[50px] ml-[20px]" src="https://thumbs.dreamstime.com/b/email-icon-black-background-flat-style-vector-illustration-168420524.jpg"> 
+            <button class="text-white text-2xl font-bold mt-[50px] ml-[10px]">Inbox</button>
+        </div>
+
+        <div class=" flex h-10 mt-[25px]">
+            <img class="h-[30px] mt-[50px] ml-[20px]" src="https://png.pngtree.com/png-clipart/20190705/original/pngtree-vector-lock-icon-png-image_4280050.jpg"> 
+            <button class="text-white text-2xl font-bold mt-[50px] ml-[10px]">Change Pin</button>
+        </div>
+
+        <div class=" flex h-10 mt-[25px]">
+            <img class="h-[30px] mt-[60px] ml-[20px]" src="https://wallpaperaccess.com/full/1303459.jpg"> 
+            <button class="text-white text-2xl font-bold mt-[50px]">Disable FingerPrint</button>
+        </div>
+
+        <div class=" flex h-10 mt-[40px]">
+            <img class="h-[30px] mt-[50px] ml-[20px]" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3xqb2SoUBTFTA9wcCruPNupDZy6ckjYJIcVqYPA9v7AmXpx4uXwdlyROteT1ff2XdW6s&usqp=CAU"> 
+            <button class="text-white text-2xl font-bold mt-[50px] ml-[10px]">Logout</button>
+        </div>
+
+    </div>
+    
+
+
+    <div class=" h-screen w-[1400px] relative bg-white">
+
+        <div class="absolute flex h-[60px] sticky top-0 bg-orange-600 w-full ">
+            <img class="h-[52px] w-[180px]  mt-2 " src="https://st.adda247.com/https://wpassets.adda247.com/wp-content/uploads/multisite/sites/5/2020/01/11073738/ii.jpg">
+           <input type="search" name="search" class=" border border-2 border-solid border-black mt-[20px] ml-[60px] h-[35px] w-[300px]" placeholder="Search">
+           <button class=" absolute top-2 right-6 mr-[40px] h-[40px] w-[120px] text-white text-2xl  font-bold">Logout</button>
+        </div>
+
+    <div id="dashboard" class="mt-[40px]">
+        <div class="justify-center flex mb-[60px] mr-[100px] ml-[100px]">
+            <div class="p-4 w-[170px] rounded-md bg-gradient-to-r from-purple-600 to-pink-500">
+                <h2 class="text-xl font-semibold ">Credit</h2>
+               
+                <p class="text-xl font-semibold">
+                    $ <span id="credit">0</span>
+                </p>
+            </div>
+            <div class="w-[170px] ml-[30px] rounded-md bg-gradient-to-r from-purple-600 to-pink-500 p-4">
+                <h2 class="text-xl font-semibold">Debit</h2>
+                <p class="text-xl font-semibold">
+                    $ <span id="debit">0</span>
+                </p>
+            </div>
+            <div class="w-[170px] ml-[30px] rounded-md bg-gradient-to-r from-purple-600 to-pink-500 p-4 p-4">
+                <h2 class="text-xl font-semibold">Balance</h2>
+                <p class="text-xl font-semibold">
+                    $ <span id="balance">2000</span>
+                </p>
+           </div> 
+        </div>
+    
+        <div id="input" class="mt-4 flex ml-[60px] mr-[100px]">
+            <div class="bg-white ml-[200px] mr-[160px] h-[180px] w-[1200px]  rounded-md shadow-xl p-4">
+                <h3 class="text-xl font-semibold">Credit</h3>
+                <input type="number" id="creditinput" class="mt-[10px] h-[40px]"  placeholder="Credit">
+                <br>
+                <button onclick="creditfntn()" id="creditbtn" class=" p-2 text-lg font-semibold mt-[20px] bg-black text-white w-[100px] h-[40px] shadow-5xl">Credit</button>
+            </div>
+            <div class=" bg-white h-[180px] w-[1200px] rounded-md shadow-xl p-4">
+                <h3  class="text-xl font-semibold">Debit</h3>
+                
+                <input type="number" id="debitinput" class="mt-[10px] h-[40px]"  placeholder="Debit">
+                <br>
+                <button onclick="debitfntn()" id="debitbtn" class="p-2 text-lg font-semibold mt-[20px] bg-black text-white w-[100px] h-[40px] shadow-5xl">Debit</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    
+
+    <script src="./bankui.js"></script>
+</body>
+
+</html>
