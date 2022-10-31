@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings-Medium</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @media only screen and (min-width:200px) and (max-width:800){
+            #i1{
+               display: block;
+
+            }
+        }
+        @media only screen and (min-width:1080px){
+            #i2{
+               margin-bottom: 0px;
+
+            }
+            #i3{
+               display: block;
+
+            }
+        }
+
+
+        
+
+    </style>
+</head>
+<body class="flex w-screen">
+   
+    <div class="flex h-screen w-screen  overflow-x-hidden">
+         <!-- 1st div -->
+    <div id="i1" class=" block fixed z-10 flex flex-col w-[110px] h-full border-grey-900 border border-1">
+       <!-- icon -->
+       <div class=" mt-[60px] ml-[20px]">
+        <a class=""><img class="h-[40px] " src="image/meduim.PNG"></a>
+       </div>
+
+       <!-- home icons -->
+       <div class="mt-[110px] flex flex-col justify-between">
+
+         <!-- home -->
+         <div class="flex">
+            <div class="flex"></div>
+            <div class="flex ml-[35px]">
+                <a><img class="h-[35px]" src="image/homw.PNG"></a>
+            </div>
+            <div class="flex"></div>
+        </div>
+
+        <!-- notification -->
+        <div class="flex mt-[40px]">
+            <div class="flex"></div>
+            <div class="flex ml-[35px]">
+                <a><img class="h-[35px]" src="image/noti.PNG"></a>
+            </div>
+            <div class="flex"></div>
+        </div>
+
+        <!-- bookmark -->
+        <div class="flex mt-[40px]">
+            <div class="flex"></div>
+            <div class="flex ml-[35px]">
+                <a><img class="h-[35px]" src="image/bookm.PNG"></a>
+            </div>
+            <div class="flex"></div>
+        </div>
+
+        <!-- book -->
+        <div class="flex mt-[40px]">
+            <div class="flex"></div>
+            <div class="flex ml-[35px]">
+                <a><img class="h-[35px]" src="image/noteb.PNG"></a>
+            </div>
+            <div class="flex"></div>
+        </div>
+
+          <!-- bookp -->
+       <div class="flex mt-[90px]">
+        <div class="flex"></div>
+        <div class="flex ml-[35px]">
+            <a><img class="h-[35px]" src="image/note.PNG"></a>
+        </div>
+        <div class="flex"></div>
+    </div>
+
+    
+     <!-- logo -->
+     <div class="flex mt-[140px]">
+        <div class="flex ml-[28px]">
+            <a><img class="h-[50px]" src="image/icon.PNG"></a>
+        </div>
+    </div>
+
+        </div>
+   </div>
+   
+
+     <!-- middle section -->
+     <div class=" h-screen w-[1700px] ">
+
+        <div id="i2" class="justify-center  ml-[200px] mr-[100px] h-screen block">
+
+            <!-- settting label -->
+            <div class=" mt-[90px]">
+           <h1 class="font-bold text-5xl font-sans ">Settings</h1>
+        </div>
+
+        <!-- buttons -->
+        <div class="flex mt-[60px]  h-[50px]  border-grey-900 border-b-2 ">
+            <div class="flex mr-[40px] h-[50px]">
+                <div class="flex h-[48px] w-[70px]">
+                    <button class="h-[50px]"> <span class="text-lg">Account</span></button>
+                </div>
+                <div class="h-[48px] w-[84px] ml-[40px]">
+                    <button class="h-[50px]"> <span class="text-lg text-[#757575] hover:text-black">Publishing</span></button>
+                </div>
+                <div class="h-[48px] w-[100px] ml-[40px]">
+                    <button class="h-[50px]"> <span class="text-lg text-[#757575] hover:text-black">Notifications</span></button>
+                </div>
+                <div class="h-[48px] w-[210px] ml-[40px]">
+                    <button class="h-[50px]"> <span class="text-lg text-[#757575] hover:text-black">Membership and Payment</span></button>
+                </div>
+                <div class="h-[48px] w-[146px] ml-[40px]">
+                    <button class="h-[50px]"> <span class="text-lg text-[#757575] hover:text-black">Security and Apps</span></button>
+                </div>
+            </div>
+        </div>
+    
+        <button class="w-[100%] mt-[48px] flex justify-between items-center text-left">
+             <span class="flex text-left box-border block text-[20px]">Email Address</span>
+             <span class="inline-block flex text-left text-[#757575] hover:text-black text-[20px]">lubnatahreem@gmail.com</span>
+            </button>
+          
+        <button class="w-[100%] my-[40px] flex justify-between items-center text-left">
+             <span class="flex text-left box-border block text-[20px]">Username and Subdomain</span>
+             <span class="inline-block flex text-left text-[#757575] hover:text-black text-[20px]">@lubnatahreem</span>
+            </button>
+          
+        <button class="w-[100%] my-[40px] flex justify-between items-center text-left"> 
+            <span class="flex-col"><span class="flex text-left box-border block text-[20px]">Profile Information </span>
+            <div class="mt-[4px] block text-left text-[#757575] text-[16px]  hover:text-black ">
+                Edit your name, photo, bio, etc.
+            </div>
+        </span>
+            <span class="inline-block flex text-left text-[#757575] hover:text-black">
+                <div class="inline-flex text-left items-center ml-[32px]">
+                    <span class="block flex text-left text-[#757575] hover:text-black text-[20px]">Lubnatahreem</span>
+                    <div class="block ml-[14px]">
+                        <span><img src="image/icon.PNG"></span>
+                    </div>
+                </div>
+            </span>
+        </button>
+
+        <a class="w-[100%] my-[40px] flex justify-between items-center text-left">
+            <span class="block text-left flex-col">
+                <span class="block text-left text-[20px]">Profile Design</span>
+                <div class="inline-block flex text-left mt-[4px] text-[#757575] hover:text-black">
+                    <span class="text-[16px]">Pick colors and fonts, style the header, and make your profile unique.</span>
+                </div>
+            </span>
+            <span><img class="w-[25px] h-[25px] flex justify-self-end hover:text-black" src="image/arrow.PNG"></span>
+        </a>
+
+        <a class="w-[100%] my-[40px] flex justify-between items-center text-left">
+            <span class="block text-left flex-col">
+                <span class="block text-left text-[20px]">Custom Domain</span>
+                <div class="inline-block flex text-left mt-[4px] text-[#757575] hover:text-black">
+                    <span class="text-[16px]">Upgrade to a Medium Membership to redirect your profile URL to a domain
+                        <br> like yourdomain.com.</span>
+                </div>
+            </span>
+           <div class="flex block justify-end">
+            <span class="text-[20px] text-[#757575] ">None</span>
+            <span><img class="ml-[20px] w-[25px] h-[25px] flex justify-self-end hover:text-black" src="image/arrow.PNG"></span>
+        </div> 
+        </a>
+
+        <a class="flex border-grey-900 border-t-2 justify-between items-center w-[100%]">
+            <span class="mt-[32px] flex">
+                <span class="flex text-[20px] block">Muted writers and publications</span>
+              <span class="ml-[560px]"><img class=" w-[25px] h-[25px] flex justify-self-end hover:text-black" src="image/arrow.PNG"></span> 
+            </span> 
+        </a>
+
+        <button class="w-[100%] my-[40px] flex justify-between items-center text-left">
+            <span class="text-[20px]">Blocked Users</span>
+        </button>
+
+        <div class="h-[0px] border-grey-900 border-b-2 w-[100%] block">
+        </div>
+
+         <button class="w-[100%] my-[40px] flex justify-between items-center text-left"> 
+         <span class="flex-col inline-block"><span class="flex block text-left box-border text-[#c94a4a] text-[20px]">Deactive Account </span>
+                <div class="mt-[4px] block text-left text-[#757575] text-[16px]  hover:text-black ">
+                    Deactivating will suspend your account until you sign back in.
+                </div>
+                </span>
+                </button>
+
+
+          <button class="w-[100%] my-[40px] flex justify-between items-center text-left"> 
+             <span class="flex-col inline-block"><span class="flex block text-left box-border text-[#c94a4a] text-[20px]">Delete Account </span>
+                <div class="mt-[4px] block text-left text-[#757575] text-[16px]  hover:text-black ">
+                Permenently delete your account and all of your content.
+                </div>
+             </span>
+           </button>
+        
+        </div>
+    </div>
+
+
+    <!-- last section -->
+    <div class=" h-screen w-[600px] sticky top-0 bottom-0 border-grey-900 border border-1">
+        <div class="inline-block">
+        <div id="i3" class="flex-col justify-center items-center block ml-[50px] mr-[50px]">
+
+            <div class="justify-center items-center mt-[95px] mb-[32px] block">
+                <h1 class="justify-center font-bold text-xl ">Suggested help articles</h1>
+            </div>
+
+            <div class=" mt-[50px]  block">
+                <a class="justify-center text-lg ">Sign in or Sign up Meduim</a>
+            </div>
+
+            <div class=" my-[20px]  block">
+                <a class="justify-center text-lg ">Your profile page</a>
+            </div>
+
+            <div class=" my-[20px]  block">
+                <a class="justify-center text-lg ">Writing and Publishing your first story</a>
+            </div>
+
+            <div class=" my-[20px]  block">
+                <a class="justify-center text-lg ">About meduim's distribution system</a>
+            </div>
+
+            <div class=" my-[20px]  block">
+                <a class="justify-center text-lg ">Get started with the partner program</a>
+            </div>
+        </div>
+
+        <div class="flex-wrap flex-row flex p-[24px] mt-[370px] block">
+            <div class="mr-[6px] block">
+                <a><p class="text-[#757575]">Help</p></a>
+            </div>
+
+            <div class="mr-[6px] block">
+                <a><p class="text-[#757575]">Status</p></a>
+            </div>
+
+            <div class="mr-[6px] block">
+                <a><p class="text-[#757575]">writers</p></a>
+            </div>
+
+            <div class="mr-[6px] block">
+                <a><p class="text-[#757575]">Blog</p></a>
+            </div>
+
+            <div class="mr-[6px] block">
+                <a><p class="text-[#757575]">Careers</p></a>
+            </div>
+
+            <div class="mr-[6px] block">
+                <a><p class="text-[#757575]">Privacy</p></a>
+            </div>
+
+            <div class="mr-[6px] block">
+                <a><p class="text-[#757575]">Terms</p></a>
+            </div>
+
+            <div class="mr-[6px] block">
+                <a><p class="text-[#757575]">About</p></a>
+            </div>
+
+            <div class="mr-[6px] block">
+                <a><p class="text-[#757575]">Knowable</p></a>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+</div>
+
+
+</body>
+</html>
